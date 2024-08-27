@@ -37,7 +37,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 nav ul li a:hover{
-    
+    color: #D01C28;
 }
 .navbar button{
     width: 70px;
@@ -50,6 +50,13 @@ nav ul li a:hover{
     text-decoration: none;
     color: white;
 }
+.navbar button:hover{
+     background-color: white;
+     border: 1px solid #D01C28;
+}
+.navbar button a:hover{
+    color: #D01C28;
+} 
 .row-1{
     display: flex;
     align-items: center;
@@ -107,6 +114,9 @@ nav ul li a:hover{
     text-decoration: none;
     color: white;
 }
+.btn-1:hover{
+    background-color: black;
+}
 .btn-2{
     width: 121px;
     height: 38px;
@@ -120,6 +130,12 @@ nav ul li a:hover{
 .btn-2 a{
     text-decoration: none;
     color: #5A5959;
+}
+.btn-2:hover{
+    background-color: #5A5959;
+}
+.btn-2 a:hover{
+    color: white;
 }
 .col-2{
     
