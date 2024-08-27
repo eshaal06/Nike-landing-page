@@ -52,6 +52,7 @@ nav ul li a:hover{
 }
 .navbar button:hover{
      background-color: black;
+
 }
 .row-1{
     display: flex;
@@ -130,6 +131,7 @@ nav ul li a:hover{
 .btn-2:hover{
     background-color: black;
 }
+
 .col-2{
     
     flex-basis: 55%;
