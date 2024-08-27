@@ -51,12 +51,8 @@ nav ul li a:hover{
     color: white;
 }
 .navbar button:hover{
-     background-color: white;
-     border: 1px solid #D01C28;
+     background-color: black;
 }
-.navbar button a:hover{
-    color: #D01C28;
-} 
 .row-1{
     display: flex;
     align-items: center;
@@ -132,10 +128,7 @@ nav ul li a:hover{
     color: #5A5959;
 }
 .btn-2:hover{
-    background-color: #5A5959;
-}
-.btn-2 a:hover{
-    color: white;
+    background-color: black;
 }
 .col-2{
     
