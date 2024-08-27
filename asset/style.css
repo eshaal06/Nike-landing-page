@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    margin: 15px 20px;
+}
+nav{
+   flex: 1;
+   text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    
+}
+.navbar button{
+    width: 70px;
+    padding: 5px 5px;
+    border: none;
+    background-color: #D01C28;
+    font-size: medium;
+}
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+.row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 152px;
+    left: 157px;
+}
+.col-1{
+    flex-basis: 45%;
+    position: relative;
+    margin-left: 85px;
+}
+.col-1 h1{
+    font-family: Poppins;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 102px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+}
+.col-1-content{
+    width: 404px;
+    height: 91px;
+    margin-top: 20px;
+    color:#5A5959;   ;
+}
+.col-1 h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+.col-1 .col-1-btn{
+    width: 350px;
+    height: 41px;
+    margin-top: 25px;
+}
+.col-1-btn{
+    width: 331px;
+    height: 41px;
+}
+.btn-1{
+    width: 120px;
+    height: 38px;
+    padding: 6px 16px 6px 16px;
+    background-color: #D01C28;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor:  pointer;
+}
+.btn-1 a{
+    text-decoration: none;
+    color: white;
+}
+.btn-2{
+    width: 121px;
+    height: 38px;
+    padding: 6px 16px 6px 16px;
+    border: 1px solid #000000;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    cursor:  pointer;
+}
+.btn-2 a{
+    text-decoration: none;
+    color: #5A5959;
+}
+.col-2{
+    
+    flex-basis: 55%;
+}
+.content{
+    margin-top: 14%;
+    display: flex;
+    align-items: center;
+}
+.shoe{
+    width: 660px;
+    height: 487.06px;   
+    filter: drop-shadow(17px 18px 6px #D0D0D0);
+}
+
+.col-1 .shop img{
+    display: inline;
+    width: 10%;
+    gap: 50px;
+    cursor: pointer;
+}
