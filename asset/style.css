@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
+
+body {
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
 }
-.container{
+
+.container {
     width: 100%;
     min-height: 100vh;
     padding-left: 7%;
@@ -12,61 +14,79 @@ body{
     box-sizing: border-box;
     overflow: hidden;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 70px;
     cursor: pointer;
     margin: 15px 20px;
 }
-nav{
-   flex: 1;
-   text-align: center;
+
+nav {
+    flex: 1;
+    text-align: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-right: 50px;
 }
-nav ul li a{
+
+nav ul li a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #D01C28;
 }
-.navbar button{
+
+.navbar button {
     width: 70px;
     padding: 5px 5px;
     border: none;
     background-color: #D01C28;
     font-size: medium;
 }
-.navbar button a{
+
+.navbar button a {
     text-decoration: none;
     color: white;
 }
-.navbar button:hover{
-     background-color: black;
+
+.navbar button:hover {
+    background-color: black;
 
 }
-.row-1{
+
+.menu {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.row-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 152px;
     left: 157px;
 }
-.col-1{
+
+.col-1 {
     flex-basis: 45%;
     position: relative;
     margin-left: 85px;
 }
-.col-1 h1{
+
+.col-1 h1 {
     font-family: Poppins;
     font-size: 100px;
     font-weight: 800;
@@ -75,28 +95,34 @@ nav ul li a:hover{
     text-transform: uppercase;
     margin-bottom: 0%;
 }
-.col-1-content{
+
+.col-1-content {
     width: 404px;
     height: 91px;
     margin-top: 20px;
-    color:#5A5959;   ;
+    color: #5A5959;
+    ;
 }
-.col-1 h3{
+
+.col-1 h3 {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     text-align: left;
 }
-.col-1 .col-1-btn{
+
+.col-1 .col-1-btn {
     width: 350px;
     height: 41px;
     margin-top: 25px;
 }
-.col-1-btn{
+
+.col-1-btn {
     width: 331px;
     height: 41px;
 }
-.btn-1{
+
+.btn-1 {
     width: 120px;
     height: 38px;
     padding: 6px 16px 6px 16px;
@@ -105,16 +131,19 @@ nav ul li a:hover{
     border: none;
     font-size: 18px;
     text-transform: capitalize;
-    cursor:  pointer;
+    cursor: pointer;
 }
-.btn-1 a{
+
+.btn-1 a {
     text-decoration: none;
     color: white;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background-color: black;
 }
-.btn-2{
+
+.btn-2 {
     width: 121px;
     height: 38px;
     padding: 6px 16px 6px 16px;
@@ -122,34 +151,333 @@ nav ul li a:hover{
     font-size: 18px;
     text-transform: capitalize;
     margin-left: 30px;
-    cursor:  pointer;
+    cursor: pointer;
 }
-.btn-2 a{
+
+.btn-2 a {
     text-decoration: none;
     color: #5A5959;
 }
-.btn-2:hover{
+
+.btn-2:hover {
     background-color: black;
 }
 
-.col-2{
-    
+.col-2 {
     flex-basis: 55%;
 }
-.content{
+
+.content {
     margin-top: 14%;
     display: flex;
     align-items: center;
 }
-.shoe{
+
+.shoe {
     width: 660px;
-    height: 487.06px;   
+    height: 487.06px;
     filter: drop-shadow(17px 18px 6px #D0D0D0);
 }
 
-.col-1 .shop img{
+.col-1 .shop img {
     display: inline;
     width: 10%;
     gap: 50px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 320px) {
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .row-1 {
+        flex-direction: column-reverse;
+        margin: 40px 0;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .col-1-head {
+        width: 100%;
+    }
+
+    .col-1 h1 {
+        font-family: Poppins;
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 58px;
+        text-align: left;
+
+    }
+
+    .col-1-content {
+        width: 285px;
+        height: 97px;
+        margin-top: 20px;
+       margin-left: 5em;
+        color: #5A5959;
+        text-align: left;
+    }
+
+    div .col-1-btn {
+        margin-left: 35%;
+        width: 120px;
+        height: 35px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-1 {
+        margin-bottom: 1em;
+        margin-top: 4em;
+        width: 121px;
+        height: 38px;
+        display: block;
+    }
+
+    .btn-2 {
+        margin-left: 0%;
+        display: block;
+        width: 121px;
+        height: 38px;
+    }
+
+    .col-1 .shop {
+        margin-left: 11%;
+        margin-top: 5em;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+    }
+
+    .col-2 .content {
+        margin-top: 0%;
+    }
+
+    .col-2 img {
+        width: 27em;
+        height: 20em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .row-1 {
+        flex-direction: column-reverse;
+        margin: 40px 0;
+    }
+    .col-1{
+        flex-basis: 80%;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+    .col-1-content {
+        width: 245px;
+        height: 97px;
+        margin-top: 20px;
+        color: #5A5959;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 768px) {
+   
+
+    header {
+        width: 100%;
+    }                       
+
+    .menu {
+        display: block;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: none;
+        margin-right: 50px;
+    }
+    
+    .row-1 {
+        flex-direction: column-reverse;
+        margin: 40px 0;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+    .col-1 h1 {
+        font-family: Poppins;
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 44px;
+        text-align: center;
+        margin-left: 2%;
+        margin-top: 5%;
+        margin-right: 2%;
+    }
+    .col-1-content {
+        width: 100%;
+        height: 97px;
+        margin-top: 20px;
+        margin-left: 11%;
+        color: #5A5959;
+        text-align: center;
+    }
+
+    div .col-1-btn {
+        margin-left: 35%;
+        width: 120px;
+        height: 35px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-2 {
+        flex-basis: 100%;
+    }
+    .col-2 .content {
+        margin-top: 0%;
+    }
+
+    .col-2 img {
+        width: 30em;
+        height: 20em;
+    }
+
+
+    div .col-1-btn {
+        margin-left: 9%;
+        width: 120px;
+        height: 35px;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-1 {
+        margin-bottom: 1em;
+        margin-top: 1em;
+        width: 121px;
+        height: 38px;
+
+    }
+
+    .btn-2 {
+        margin-left: 0%;
+        width: 121px;
+        height: 38px;
+    }
+
+    .col-1 .shop {
+        margin-left: 11%;
+        margin-top: 5em;
+    }
+}
+@media only screen and (max-width:1024px) {
+    *{
+       margin: 0;
+       margin-left: 0%;
+
+    }
+    header{
+        width: 100%;
+    }
+    .col-1{
+        margin-left: 2%;
+        margin-top: 5%;
+        flex-basis: 40%;
+    }
+    .col-1 h1 {
+        font-family: Poppins;
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 64px;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .col-1-content {
+        width: 25em;
+        height: 97px;
+        margin-top: 20px;
+        margin-left: 8%;
+        color: #5A5959;
+        text-align: left;
+    }
+    div .col-1-btn {
+        margin-left: 8%;
+        width: 120px;
+        height: 35px;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-1 {
+        margin-bottom: 1em;
+        margin-top: 1em;
+        width: 121px;
+        height: 38px;
+
+    }
+    .btn-2 {
+        margin-left: 0%;
+        width: 121px;
+        height: 38px;
+    }
+
+    .col-1 .shop {
+        margin-left: 11%;
+        margin-top: 1em;
+    }
+    .col-2 {
+        flex-basis: 60%;
+    }
+    .col-2 img {
+        width: 35em;
+        height: 25em;
+    }
+}
+
